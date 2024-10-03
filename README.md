@@ -55,3 +55,11 @@ This repository aims to provide a simplified setup to reproduce and investigate 
 - Braze React Native SDK version: 12.0.0
 - Android version: Android 14
 - Device: Emulator / Real device
+
+## Images:
+
+In-App message image used for testing:
+![In-App message image](assets/braze/original.webp)
+
+Screenshot of in-app message displayed over the status bar:
+![Screenshot of in-app message displayed over the status bar](assets/braze/screenshot.png)
