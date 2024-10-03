@@ -113,9 +113,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.joejuice.joeloyalty'
+    namespace 'com.joejuice.joeloyalty.braze'
     defaultConfig {
-        applicationId 'com.joejuice.joeloyalty'
+        applicationId 'com.joejuice.joeloyalty.braze'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
