@@ -12,6 +12,17 @@ We follow the steps outlined in the [Braze React Native SDK setup guide](https:/
 When using Braze's fullscreen in-app messages on Android in our React Native application, we are seeing the "X" dismiss button displayed over the Status Bar.
 This repository aims to provide a simplified setup to reproduce and investigate this problem.
 
+The issue seems to occur only when the Status Bar is set to translucent on Android devices.
+Adding the suggested fix from the Braze team to the `braze.xml` file does not seem to fix the issue.
+
+```
+<bool name="com_braze_html_in_app_message_apply_insets">true</bool>
+```
+
+See `.gif` of the reproduced issue:
+
+![Reproduced issue](assets/braze/issue.gif)
+
 ## Setup Instructions
 
 1. Clone this repository:
@@ -55,11 +66,3 @@ This repository aims to provide a simplified setup to reproduce and investigate 
 - Braze React Native SDK version: 12.0.0
 - Android version: Android 14
 - Device: Emulator / Real device
-
-## Images:
-
-In-App message image used for testing:
-![In-App message image](assets/braze/original.webp)
-
-Screenshot of in-app message displayed over the status bar:
-![Screenshot of in-app message displayed over the status bar](assets/braze/screenshot.png)
