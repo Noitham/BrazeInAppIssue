@@ -8,7 +8,7 @@ const userId = "{YOUR_USER_ID}";
  * Status bar modification.
  * We seem to be experiencing the issue only when the status bar is translucent.
  */
-StatusBar.setTranslucent(true);
+// StatusBar.setTranslucent(true);
 StatusBar.setBarStyle("dark-content", false);
 StatusBar.setBackgroundColor("deeppink");
 
